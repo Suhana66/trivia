@@ -232,7 +232,7 @@ class Trivia():
             Number of questions not attempted: {self.q_no.get() - self.attempted}\n
             Number of correct answers: {self.correct}\n
             Number of incorrect answers: {self.attempted - self.correct}\n
-            Score: {self.correct / self.q_no.get() * 100}%\n
+            Score: {round(self.correct / self.q_no.get() * 100, 2)}%\n
             Maximum Streak: {max(self.streaks, default=0)}""")
         self.window.destroy()
 
